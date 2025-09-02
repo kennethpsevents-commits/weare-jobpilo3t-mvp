@@ -1,10 +1,16 @@
 "use client"
 
 import type React from "react"
+import { createContext, useContext, useState } from "react"
 
-import { createContext, useContext, useEffect, useState } from "react"
-import { createBrowserClient } from "@supabase/ssr"
-import { type User, authClient } from "@/lib/auth"
+interface User {
+  id: string
+  email: string
+  firstName?: string
+  lastName?: string
+  role: "user" | "recruiter" | "admin"
+  created_at: string
+}
 
 const AuthContext = createContext<{
   user: User | null
@@ -24,97 +30,42 @@ const AuthContext = createContext<{
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null)
-  const [loading, setLoading] = useState(true)
-
-  const supabase = createBrowserClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-  )
-
-  useEffect(() => {
-    // Get initial session
-    const getInitialSession = async () => {
-      try {
-        const currentUser = await authClient.getCurrentUser()
-        setUser(currentUser)
-      } catch (error) {
-        console.error("[v0] Error getting initial session:", error)
-        setUser(null)
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    getInitialSession()
-
-    // Listen for auth changes
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange(async (event, session) => {
-      console.log("[v0] Auth state changed:", event)
-
-      if (session?.user) {
-        try {
-          const currentUser = await authClient.getCurrentUser()
-          setUser(currentUser)
-        } catch (error) {
-          console.error("[v0] Error updating user:", error)
-          setUser(null)
-        }
-      } else {
-        setUser(null)
-      }
-
-      setLoading(false)
-    })
-
-    return () => {
-      subscription.unsubscribe()
-    }
-  }, [supabase])
+  const [loading, setLoading] = useState(false) // Set to false to avoid infinite loading
 
   const signIn = async (email: string, password: string) => {
-    setLoading(true)
-    try {
-      await authClient.signIn(email, password)
-      // User will be updated via onAuthStateChange
-    } catch (error) {
-      setLoading(false)
-      throw error
-    }
+    console.log("[v0] Demo mode: Sign in attempted with", email)
+    // Create demo user
+    setUser({
+      id: "demo-user",
+      email,
+      firstName: "Demo",
+      lastName: "User",
+      role: "user",
+      created_at: new Date().toISOString(),
+    })
   }
 
   const signUp = async (email: string, password: string, firstName: string, lastName: string) => {
-    setLoading(true)
-    try {
-      await authClient.signUp(email, password, firstName, lastName)
-      // User will be updated via onAuthStateChange
-    } catch (error) {
-      setLoading(false)
-      throw error
-    }
+    console.log("[v0] Demo mode: Sign up attempted with", email)
+    // Create demo user
+    setUser({
+      id: "demo-user",
+      email,
+      firstName,
+      lastName,
+      role: "user",
+      created_at: new Date().toISOString(),
+    })
   }
 
   const signOut = async () => {
-    setLoading(true)
-    try {
-      await authClient.signOut()
-      setUser(null)
-    } catch (error) {
-      console.error("[v0] Error signing out:", error)
-    } finally {
-      setLoading(false)
-    }
+    console.log("[v0] Demo mode: Sign out")
+    setUser(null)
   }
 
   const refreshUser = async () => {
-    try {
-      const currentUser = await authClient.getCurrentUser()
-      setUser(currentUser)
-    } catch (error) {
-      console.error("[v0] Error refreshing user:", error)
-      setUser(null)
-    }
+    console.log("[v0] Demo mode: Refresh user")
+    // Keep current user state
   }
 
   return (

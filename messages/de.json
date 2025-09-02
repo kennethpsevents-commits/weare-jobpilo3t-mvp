@@ -1,0 +1,167 @@
+{
+  "common": {
+    "loading": "Laden...",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "view": "Anzeigen",
+    "search": "Suchen",
+    "filter": "Filtern",
+    "clear": "Löschen",
+    "apply": "Anwenden",
+    "close": "Schließen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "previous": "Zurück",
+    "home": "Startseite",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "privacy": "Datenschutz",
+    "terms": "AGB"
+  },
+  "navigation": {
+    "jobs": "Jobs",
+    "companies": "Unternehmen",
+    "recruiter": "Für Recruiter",
+    "login": "Anmelden",
+    "signup": "Registrieren",
+    "dashboard": "Dashboard",
+    "profile": "Profil",
+    "settings": "Einstellungen",
+    "logout": "Abmelden"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Finden Sie Ihren Traumjob mit KI",
+      "subtitle": "JobPilot nutzt fortschrittliche KI, um Sie mit den perfekten Karrieremöglichkeiten in Europa zu verbinden",
+      "cta": "Jobsuche Starten",
+      "secondary_cta": "Für Recruiter"
+    },
+    "features": {
+      "ai_matching": {
+        "title": "KI-gestütztes Matching",
+        "description": "Unser intelligentes System analysiert Ihre Fähigkeiten und Präferenzen, um die besten Job-Matches zu finden"
+      },
+      "european_jobs": {
+        "title": "Europäischer Arbeitsmarkt",
+        "description": "Zugang zu tausenden von Möglichkeiten in Deutschland, Niederlande, Polen, Frankreich und mehr"
+      },
+      "career_guidance": {
+        "title": "Karriereberatung",
+        "description": "Erhalten Sie persönliche Beratung und Einblicke, um Ihre Karriere voranzutreiben"
+      }
+    },
+    "stats": {
+      "jobs": "Aktive Jobs",
+      "companies": "Partner Unternehmen",
+      "matches": "Erfolgreiche Matches",
+      "countries": "Länder"
+    }
+  },
+  "jobs": {
+    "title": "Stellenangebote",
+    "subtitle": "Entdecken Sie Ihren nächsten Karriereschritt",
+    "search_placeholder": "Jobs, Unternehmen oder Fähigkeiten suchen...",
+    "location_placeholder": "Standort",
+    "filters": {
+      "type": "Arbeitstyp",
+      "branch": "Branche",
+      "salary": "Gehalt",
+      "experience": "Erfahrung",
+      "language": "Sprache"
+    },
+    "types": {
+      "Remote": "Remote",
+      "On-site": "Vor Ort",
+      "Hybrid": "Hybrid"
+    },
+    "card": {
+      "posted": "Veröffentlicht",
+      "ago": "vor",
+      "apply": "Jetzt Bewerben",
+      "save": "Job Speichern",
+      "company": "Unternehmen",
+      "location": "Standort",
+      "salary": "Gehalt",
+      "requirements": "Anforderungen",
+      "benefits": "Vorteile"
+    },
+    "no_results": "Keine Jobs gefunden, die Ihren Kriterien entsprechen",
+    "load_more": "Mehr Jobs Laden"
+  },
+  "recruiter": {
+    "dashboard": {
+      "title": "Recruiter Dashboard",
+      "welcome": "Willkommen zurück",
+      "post_job": "Neuen Job Posten - €50",
+      "stats": {
+        "active_jobs": "Aktive Jobs",
+        "total_applications": "Bewerbungen Gesamt",
+        "credits_remaining": "Verbleibende Credits",
+        "total_views": "Aufrufe Gesamt"
+      },
+      "tabs": {
+        "jobs": "Stellenausschreibungen",
+        "candidates": "Kandidaten",
+        "payments": "Zahlungen"
+      }
+    },
+    "post_job": {
+      "title": "Neuen Job Posten",
+      "description": "Erstellen Sie eine neue Stellenausschreibung für €50. Dies wird sofort von Ihrem Konto abgebucht.",
+      "fields": {
+        "job_title": "Jobtitel",
+        "company": "Unternehmen",
+        "location": "Standort",
+        "country": "Land",
+        "work_type": "Arbeitstyp",
+        "branch": "Branche",
+        "language": "Sprache",
+        "salary": "Gehalt",
+        "description": "Jobbeschreibung",
+        "requirements": "Anforderungen",
+        "benefits": "Vorteile"
+      },
+      "placeholders": {
+        "job_title": "z.B. Senior React Developer",
+        "location": "z.B. Berlin, Deutschland",
+        "salary": "z.B. €50.000 - €70.000",
+        "description": "Beschreiben Sie die Rolle, Verantwortlichkeiten und wonach Sie suchen...",
+        "requirement": "Anforderung hinzufügen",
+        "benefit": "Vorteil hinzufügen"
+      },
+      "cost": "Kosten: €50,00",
+      "credits_remaining": "Verbleibende Credits",
+      "insufficient_credits": "Unzureichende Credits. Bitte kaufen Sie Credits, um einen Job zu posten.",
+      "submit": "Job Posten - €50"
+    }
+  },
+  "countries": {
+    "Netherlands": "Niederlande",
+    "Germany": "Deutschland",
+    "Poland": "Polen",
+    "France": "Frankreich",
+    "United Kingdom": "Vereinigtes Königreich",
+    "Belgium": "Belgien",
+    "Spain": "Spanien",
+    "Italy": "Italien"
+  },
+  "branches": {
+    "IT": "Informationstechnologie",
+    "Marketing": "Marketing",
+    "Sales": "Vertrieb",
+    "Design": "Design",
+    "Finance": "Finanzen",
+    "HR": "Personalwesen",
+    "Operations": "Betrieb",
+    "Customer Service": "Kundenservice",
+    "Healthcare": "Gesundheitswesen",
+    "Education": "Bildung",
+    "Legal": "Rechtswesen",
+    "Engineering": "Ingenieurwesen",
+    "Other": "Sonstiges"
+  }
+}

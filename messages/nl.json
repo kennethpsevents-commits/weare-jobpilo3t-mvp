@@ -1,0 +1,229 @@
+{
+  "common": {
+    "loading": "Laden...",
+    "error": "Fout",
+    "success": "Succes",
+    "cancel": "Annuleren",
+    "save": "Opslaan",
+    "delete": "Verwijderen",
+    "edit": "Bewerken",
+    "view": "Bekijken",
+    "search": "Zoeken",
+    "filter": "Filteren",
+    "clear": "Wissen",
+    "apply": "Toepassen",
+    "close": "Sluiten",
+    "back": "Terug",
+    "next": "Volgende",
+    "previous": "Vorige",
+    "home": "Home",
+    "about": "Over ons",
+    "contact": "Contact",
+    "privacy": "Privacybeleid",
+    "terms": "Algemene voorwaarden"
+  },
+  "navigation": {
+    "jobs": "Vacatures",
+    "companies": "Bedrijven",
+    "recruiter": "Voor Recruiters",
+    "login": "Inloggen",
+    "signup": "Registreren",
+    "dashboard": "Dashboard",
+    "profile": "Profiel",
+    "settings": "Instellingen",
+    "logout": "Uitloggen",
+    "home": "Home",
+    "aiMatching": "AI Matching",
+    "forEmployers": "Voor Werkgevers",
+    "aboutUs": "Over Ons",
+    "postJob": "Vacature Plaatsen"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Vind je droomjob met AI",
+      "subtitle": "JobPilot gebruikt slimme AI-technologie om vacatures te vinden die perfect bij jouw vaardigheden en ambities passen.",
+      "searchPlaceholder": "Zoek vacatures...",
+      "searchButton": "Zoeken"
+    },
+    "features": {
+      "ai_matching": {
+        "title": "AI-Gedreven Matching",
+        "description": "Ons intelligente systeem analyseert je vaardigheden en voorkeuren om de beste vacature matches te vinden"
+      },
+      "european_jobs": {
+        "title": "Europese Arbeidsmarkt",
+        "description": "Toegang tot duizenden kansen in Nederland, Duitsland, Polen, Frankrijk en meer"
+      },
+      "career_guidance": {
+        "title": "Carrière Begeleiding",
+        "description": "Krijg persoonlijk advies en inzichten om je carrière vooruit te helpen"
+      },
+      "whyJobPilot": "Waarom JobPilot?",
+      "whyJobPilotDesc": "Ontdek waarom duizenden professionals JobPilot gebruiken om hun volgende carrièrestap te vinden.",
+      "aiMatching": "AI-Powered Matching",
+      "aiMatchingDesc": "Onze geavanceerde AI analyseert jouw profiel en matcht je met vacatures die perfect bij je passen.",
+      "realTimeUpdates": "Real-time Updates",
+      "realTimeUpdatesDesc": "Krijg direct meldingen van nieuwe vacatures die matchen met jouw voorkeuren en vaardigheden.",
+      "personalProfile": "Persoonlijk Profiel",
+      "personalProfileDesc": "Bouw een uitgebreid profiel op en laat werkgevers jou vinden voor de perfecte match.",
+      "companies": "Bedrijven"
+    },
+    "stats": {
+      "jobs": "Actieve Vacatures",
+      "companies": "Partner Bedrijven",
+      "matches": "Succesvolle Matches",
+      "countries": "Landen"
+    },
+    "featuredJobs": {
+      "title": "Uitgelichte Vacatures",
+      "subtitle": "Ontdek de nieuwste kansen van topbedrijven",
+      "viewAll": "Alle vacatures"
+    },
+    "cta": {
+      "title": "Klaar om je droomjob te vinden?",
+      "subtitle": "Sluit je aan bij duizenden professionals die al hun perfecte match hebben gevonden via JobPilot.",
+      "createAccount": "Gratis Account Aanmaken",
+      "tryAiMatching": "AI Matching Proberen"
+    }
+  },
+  "jobs": {
+    "title": "Vacatures",
+    "subtitle": "Ontdek je volgende carrièrestap",
+    "search_placeholder": "Zoek vacatures, bedrijven of vaardigheden...",
+    "location_placeholder": "Locatie",
+    "filters": {
+      "type": "Werktype",
+      "branch": "Branche",
+      "salary": "Salaris",
+      "experience": "Ervaring",
+      "language": "Taal"
+    },
+    "types": {
+      "Remote": "Thuiswerken",
+      "On-site": "Op kantoor",
+      "Hybrid": "Hybride"
+    },
+    "card": {
+      "posted": "Geplaatst",
+      "ago": "geleden",
+      "apply": "Solliciteren",
+      "save": "Vacature Opslaan",
+      "company": "Bedrijf",
+      "location": "Locatie",
+      "salary": "Salaris",
+      "requirements": "Vereisten",
+      "benefits": "Voordelen"
+    },
+    "no_results": "Geen vacatures gevonden die voldoen aan je criteria",
+    "load_more": "Meer Vacatures Laden"
+  },
+  "recruiter": {
+    "dashboard": {
+      "title": "Recruiter Dashboard",
+      "welcome": "Welkom terug",
+      "post_job": "Nieuwe Vacature Plaatsen - €50",
+      "stats": {
+        "active_jobs": "Actieve Vacatures",
+        "total_applications": "Totaal Sollicitaties",
+        "credits_remaining": "Credits Over",
+        "total_views": "Totaal Weergaven"
+      },
+      "tabs": {
+        "jobs": "Vacature Plaatsingen",
+        "candidates": "Kandidaten",
+        "payments": "Betalingen"
+      }
+    },
+    "post_job": {
+      "title": "Nieuwe Vacature Plaatsen",
+      "description": "Maak een nieuwe vacature voor €50. Dit wordt direct van je account afgeschreven.",
+      "fields": {
+        "job_title": "Functietitel",
+        "company": "Bedrijf",
+        "location": "Locatie",
+        "country": "Land",
+        "work_type": "Werktype",
+        "branch": "Branche",
+        "language": "Taal",
+        "salary": "Salaris",
+        "description": "Functiebeschrijving",
+        "requirements": "Vereisten",
+        "benefits": "Voordelen"
+      },
+      "placeholders": {
+        "job_title": "bijv. Senior React Developer",
+        "location": "bijv. Amsterdam, Nederland",
+        "salary": "bijv. €50.000 - €70.000",
+        "description": "Beschrijf de rol, verantwoordelijkheden en waar je naar zoekt...",
+        "requirement": "Voeg een vereiste toe",
+        "benefit": "Voeg een voordeel toe"
+      },
+      "cost": "Kosten: €50,00",
+      "credits_remaining": "Credits over",
+      "insufficient_credits": "Onvoldoende credits. Koop credits om een vacature te plaatsen.",
+      "submit": "Vacature Plaatsen - €50"
+    }
+  },
+  "ai_matching": {
+    "title": "AI Vacature Matches",
+    "subtitle": "Gepersonaliseerde vacature aanbevelingen gebaseerd op je profiel",
+    "refresh": "Matches Vernieuwen",
+    "analyzing": "Vacature matches analyseren met AI...",
+    "no_matches": "Geen vacature matches gevonden. Probeer je profiel of vaardigheden bij te werken.",
+    "match_score": "Match Score",
+    "excellent_match": "Uitstekende Match",
+    "good_match": "Goede Match",
+    "fair_match": "Redelijke Match",
+    "poor_match": "Slechte Match",
+    "why_matches": "Waarom dit matcht:",
+    "matching_skills": "Matchende vaardigheden",
+    "skills_to_develop": "Vaardigheden om te ontwikkelen",
+    "salary_fit": "Salaris",
+    "location_fit": "Locatie"
+  },
+  "profile": {
+    "title": "Je Profiel",
+    "subtitle": "Beheer je professionele informatie voor betere vacature matching",
+    "fields": {
+      "skills": "Vaardigheden",
+      "experience": "Jaren Ervaring",
+      "preferred_locations": "Gewenste Locaties",
+      "preferred_type": "Gewenst Werktype",
+      "preferred_branches": "Gewenste Branches",
+      "salary_expectation": "Salaris Verwachting",
+      "languages": "Talen",
+      "cv": "CV"
+    },
+    "placeholders": {
+      "skill": "Voeg een vaardigheid toe",
+      "location": "Voeg een locatie toe",
+      "min_salary": "Minimum salaris",
+      "max_salary": "Maximum salaris"
+    }
+  },
+  "countries": {
+    "Netherlands": "Nederland",
+    "Germany": "Duitsland",
+    "Poland": "Polen",
+    "France": "Frankrijk",
+    "United Kingdom": "Verenigd Koninkrijk",
+    "Belgium": "België",
+    "Spain": "Spanje",
+    "Italy": "Italië"
+  },
+  "branches": {
+    "IT": "Informatietechnologie",
+    "Marketing": "Marketing",
+    "Sales": "Verkoop",
+    "Design": "Design",
+    "Finance": "Financiën",
+    "HR": "Human Resources",
+    "Operations": "Operaties",
+    "Customer Service": "Klantenservice",
+    "Healthcare": "Zorgverlening",
+    "Education": "Onderwijs",
+    "Legal": "Juridisch",
+    "Engineering": "Engineering",
+    "Other": "Overig"
+  }
+}

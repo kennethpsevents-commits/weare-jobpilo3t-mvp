@@ -1,0 +1,38 @@
+{
+  "navigation": {
+    "home": "Strona główna",
+    "jobs": "Praca",
+    "aiMatching": "Dopasowanie AI",
+    "forEmployers": "Dla Pracodawców",
+    "aboutUs": "O Nas",
+    "login": "Zaloguj",
+    "postJob": "Dodaj Ofertę"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Znajdź swoją wymarzoną pracę z AI",
+      "subtitle": "JobPilot wykorzystuje sztuczną inteligencję, aby połączyć Cię z idealnymi możliwościami w całej Europie",
+      "searchPlaceholder": "Szukaj pracy...",
+      "searchButton": "Szukaj"
+    },
+    "features": {
+      "aiMatching": "Dopasowanie AI",
+      "aiMatchingDesc": "Nasza AI analizuje Twój profil i znajduje idealne oferty pracy",
+      "europeanJobs": "Praca w Europie",
+      "europeanJobsDesc": "Dostęp do tysięcy ofert pracy w całej Europie",
+      "careerGuidance": "Doradztwo Kariery",
+      "careerGuidanceDesc": "Otrzymuj spersonalizowane porady dotyczące kariery"
+    }
+  },
+  "jobs": {
+    "title": "Dostępne Oferty Pracy",
+    "filters": {
+      "location": "Lokalizacja",
+      "category": "Kategoria",
+      "type": "Typ",
+      "salary": "Wynagrodzenie"
+    },
+    "apply": "Aplikuj",
+    "viewDetails": "Zobacz Szczegóły"
+  }
+}

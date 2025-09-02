@@ -1,0 +1,96 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "search": "Search",
+    "filter": "Filter",
+    "clear": "Clear",
+    "apply": "Apply",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "navigation": {
+    "home": "Home",
+    "jobs": "Jobs",
+    "aiMatching": "AI Matching",
+    "forEmployers": "For Employers",
+    "aboutUs": "About Us",
+    "login": "Login",
+    "postJob": "Post Job"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Find Your Dream Job with AI",
+      "subtitle": "JobPilot uses artificial intelligence to connect you with perfect opportunities across Europe",
+      "searchPlaceholder": "Search jobs...",
+      "searchButton": "Search"
+    },
+    "features": {
+      "whyJobPilot": "Why JobPilot?",
+      "whyJobPilotDesc": "Discover why thousands of professionals use JobPilot to find their next career step.",
+      "aiMatching": "AI-Powered Matching",
+      "aiMatchingDesc": "Our advanced AI analyzes your profile and matches you with jobs that fit perfectly.",
+      "realTimeUpdates": "Real-time Updates",
+      "realTimeUpdatesDesc": "Get instant notifications of new jobs that match your preferences and skills.",
+      "personalProfile": "Personal Profile",
+      "personalProfileDesc": "Build a comprehensive profile and let employers find you for the perfect match.",
+      "companies": "Companies"
+    },
+    "featuredJobs": {
+      "title": "Featured Jobs",
+      "subtitle": "Discover the latest opportunities from top companies",
+      "viewAll": "All jobs"
+    },
+    "cta": {
+      "title": "Ready to find your dream job?",
+      "subtitle": "Join thousands of professionals who have already found their perfect match through JobPilot.",
+      "createAccount": "Create Free Account",
+      "tryAiMatching": "Try AI Matching"
+    }
+  },
+  "jobs": {
+    "title": "Available Jobs",
+    "filters": {
+      "location": "Location",
+      "category": "Category",
+      "type": "Type",
+      "salary": "Salary"
+    },
+    "apply": "Apply",
+    "viewDetails": "View Details"
+  },
+  "recruiter": {
+    "payment": {
+      "title": "Purchase Credits",
+      "description": "Buy credits to post job listings on JobPilot.",
+      "currentCredits": "Current credits",
+      "mostPopular": "Most Popular",
+      "save": "Save",
+      "jobPost": "job post",
+      "jobPosts": "job posts",
+      "features": {
+        "instantActivation": "Instant activation",
+        "aiMatching": "AI-powered candidate matching",
+        "candidateAccess": "Direct candidate access",
+        "bulkDiscount": "Bulk discount included"
+      },
+      "processing": "Processing...",
+      "purchase": "Purchase",
+      "securePayment": "Secure payment powered by Stripe",
+      "supportedMethods": "Credit cards, iDEAL, and Bancontact accepted"
+    }
+  }
+}

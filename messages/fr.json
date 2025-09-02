@@ -1,0 +1,38 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "jobs": "Emplois",
+    "aiMatching": "Matching IA",
+    "forEmployers": "Pour Employeurs",
+    "aboutUs": "À Propos",
+    "login": "Connexion",
+    "postJob": "Publier Emploi"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Trouvez votre emploi de rêve avec l'IA",
+      "subtitle": "JobPilot utilise l'intelligence artificielle pour vous connecter aux opportunités parfaites à travers l'Europe",
+      "searchPlaceholder": "Rechercher des emplois...",
+      "searchButton": "Rechercher"
+    },
+    "features": {
+      "aiMatching": "Matching IA",
+      "aiMatchingDesc": "Notre IA analyse votre profil et trouve les emplois parfaits",
+      "europeanJobs": "Emplois Européens",
+      "europeanJobsDesc": "Accédez à des milliers d'emplois dans toute l'Europe",
+      "careerGuidance": "Conseils Carrière",
+      "careerGuidanceDesc": "Obtenez des conseils personnalisés pour votre carrière"
+    }
+  },
+  "jobs": {
+    "title": "Emplois Disponibles",
+    "filters": {
+      "location": "Lieu",
+      "category": "Catégorie",
+      "type": "Type",
+      "salary": "Salaire"
+    },
+    "apply": "Postuler",
+    "viewDetails": "Voir Détails"
+  }
+}

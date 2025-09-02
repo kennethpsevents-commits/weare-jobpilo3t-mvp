@@ -1,0 +1,197 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Job {
+  id              String    @id @default(cuid())
+  externalId      String
+  source          String
+  orgId           String?
+  title           String
+  descHtml        String?
+  descText        String?
+  employmentType  String?
+  remote          Boolean   @default(false)
+  city            String?
+  country         String?
+  lat             Float?
+  lon             Float?
+  postedAt        DateTime
+  expiresAt       DateTime?
+  url             String    @unique
+  salaryMin       Int?
+  salaryMax       Int?
+  currency        String    @default("EUR")
+  payInterval     String?
+  lang            String    @default("nl")
+  canonicalHash   String    @unique
+  views           Int       @default(0)
+  applications    Int       @default(0)
+  recruiterId     String?
+  category        String?
+  skills          String[]
+  experienceLevel String?
+  isActive        Boolean   @default(true)
+  isFeatured      Boolean   @default(false)
+  priority        Int       @default(0)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  // Relations
+  recruiter       Recruiter? @relation(fields: [recruiterId], references: [id])
+  embed           Embed?
+  rank            Rank?
+  applications_rel Application[]
+
+  @@index([isActive, lang, createdAt])
+  @@index([city, country])
+  @@index([canonicalHash])
+  @@map("jobs")
+}
+
+model Embed {
+  id    String  @id @default(cuid())
+  jobId String  @unique
+  vec   Float[] // pgvector will be added via raw SQL
+  job   Job     @relation(fields: [jobId], references: [id], onDelete: Cascade)
+
+  @@map("embeds")
+}
+
+model Rank {
+  id        String @id @default(cuid())
+  jobId     String @unique
+  freshness Float
+  semantic  Float
+  salary    Float
+  click     Float
+  final     Float
+  job       Job    @relation(fields: [jobId], references: [id], onDelete: Cascade)
+
+  @@map("ranks")
+}
+
+model Candidate {
+  id                  String    @id @default(cuid())
+  email               String    @unique
+  name                String?
+  skills              String[]
+  experience          Int?
+  preferredLocations  String[]
+  preferredType       String?
+  preferredBranches   String[]
+  salaryMin           Int?
+  salaryMax           Int?
+  salaryCurrency      String    @default("EUR")
+  languages           String[]
+  cv                  String?
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+
+  applications        Application[]
+  consents           Consent[]
+
+  @@map("candidates")
+}
+
+model Application {
+  id          String   @id @default(cuid())
+  candidateId String
+  jobId       String
+  status      String   @default("applied")
+  appliedAt   DateTime @default(now())
+
+  candidate   Candidate @relation(fields: [candidateId], references: [id])
+  job         Job       @relation(fields: [jobId], references: [id])
+
+  @@unique([candidateId, jobId])
+  @@map("applications")
+}
+
+model Recruiter {
+  id           String   @id @default(cuid())
+  companyName  String
+  contactEmail String   @unique
+  contactPhone String?
+  website      String?
+  description  String?
+  credits      Int      @default(0)
+  subscription String   @default("free")
+  createdAt    DateTime @default(now())
+  lastActive   DateTime @default(now())
+
+  jobs         Job[]
+  payments     Payment[]
+  outreach     OutreachMessage[]
+
+  @@map("recruiters")
+}
+
+model Payment {
+  id          String    @id @default(cuid())
+  recruiterId String
+  amount      Decimal   @db.Decimal(10, 2)
+  currency    String    @default("EUR")
+  type        String
+  status      String    @default("pending")
+  jobId       String?
+  stripeId    String?
+  createdAt   DateTime  @default(now())
+  processedAt DateTime?
+
+  recruiter   Recruiter @relation(fields: [recruiterId], references: [id])
+
+  @@map("payments")
+}
+
+model Consent {
+  id          String   @id @default(cuid())
+  candidateId String
+  channel     String
+  granted     Boolean
+  grantedAt   DateTime @default(now())
+  revokedAt   DateTime?
+
+  candidate   Candidate @relation(fields: [candidateId], references: [id])
+
+  @@unique([candidateId, channel])
+  @@map("consents")
+}
+
+model OutreachMessage {
+  id          String   @id @default(cuid())
+  recruiterId String
+  candidateId String
+  jobId       String
+  channel     String
+  templateId  String
+  content     String
+  status      String   @default("pending")
+  sentAt      DateTime?
+  deliveredAt DateTime?
+  readAt      DateTime?
+  repliedAt   DateTime?
+  createdAt   DateTime @default(now())
+
+  recruiter   Recruiter @relation(fields: [recruiterId], references: [id])
+
+  @@map("outreach_messages")
+}
+
+model CrawlLog {
+  id        String   @id @default(cuid())
+  source    String
+  status    String
+  jobsFound Int      @default(0)
+  errors    String[]
+  duration  Int?
+  startedAt DateTime @default(now())
+  endedAt   DateTime?
+
+  @@map("crawl_logs")
+}

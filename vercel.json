@@ -1,0 +1,29 @@
+{
+  "functions": {
+    "app/api/crawl/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/admin/crawl/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/monster-mine/route.ts": {
+      "maxDuration": 300
+    }
+  },
+  "env": {
+    "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD": "true",
+    "PUPPETEER_EXECUTABLE_PATH": "/usr/bin/google-chrome-stable"
+  },
+  "crons": [
+    {
+      "path": "/api/cron/crawl-jobs",
+      "schedule": "0 */6 * * *"
+    },
+    {
+      "path": "/api/cron/cleanup-old-jobs",
+      "schedule": "0 2 * * *"
+    }
+  ],
+  "regions": ["ams1", "fra1"],
+  "framework": "nextjs"
+}
